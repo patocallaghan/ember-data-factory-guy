@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 5.10.1
+dependencies:
+  override:
+    - npm install npm@3.10.3 -g
+    - npm install bower@1.7.9 -g
+    - npm install
+    - bower install

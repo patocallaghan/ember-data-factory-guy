@@ -15,7 +15,7 @@
   "scripts": {
     "start": "ember server",
     "build": "ember build",
-    "test": "ember test"
+    "test": "ember exam --split=10 --parallel --filter='mock'"
   },
   "engines": {
     "node": ">= 0.10.0"
@@ -44,6 +44,7 @@
     "ember-data-model-fragments": "~2.3.1",
     "ember-disable-prototype-extensions": "1.1.0",
     "ember-django-adapter": "1.1.2",
+    "ember-exam": "0.4.4",
     "ember-export-application-global": "latest",
     "ember-load-initializers": "^0.5.0",
     "ember-resolver": "2.0.3",
