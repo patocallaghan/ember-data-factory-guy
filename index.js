@@ -69,7 +69,7 @@ module.exports = {
       }
     }
 
-    return MergeTrees(trees);
+    return new MergeTrees(trees);
   },
 
   included: function(app) {
