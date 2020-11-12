@@ -12,7 +12,7 @@ export default Model.extend({
   projects: hasMany('project', { async: false }),
   hats: hasMany('hat', { async: false, polymorphic: true }),
 
-  funnyName: computed("name", function() {
-    return "funny " + this.get('name');
-  })
+  funnyName: computed('name', function () {
+    return 'funny ' + this.get('name');
+  }),
 });

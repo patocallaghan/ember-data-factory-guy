@@ -4,8 +4,8 @@ module.exports = {
     {
       name: 'default',
       bower: {
-        devDependencies: {}
-      }
+        devDependencies: {},
+      },
     },
     {
       name: 'ember-ember-data-2.11',
@@ -14,57 +14,57 @@ module.exports = {
           'ember-source': '2.11',
           'ember-data': '2.11',
           'ember-data-model-fragments': '2.11',
-          'ember-inflector': '1.9.4'
-        }
-      }
+          'ember-inflector': '1.9.4',
+        },
+      },
     },
     {
       name: 'ember-ember-data-release',
       bower: {
         devDependencies: {
-          'ember': 'components/ember#release'
+          ember: 'components/ember#release',
         },
         resolutions: {
-          'ember': 'release'
-        }
+          ember: 'release',
+        },
       },
       npm: {
         devDependencies: {
-          'ember-data': 'release'
-        }
-      }
+          'ember-data': 'release',
+        },
+      },
     },
     {
       name: 'ember-ember-data-beta',
       bower: {
         devDependencies: {
-          'ember': 'components/ember#beta'
+          ember: 'components/ember#beta',
         },
         resolutions: {
-          'ember': 'beta'
-        }
+          ember: 'beta',
+        },
       },
       npm: {
         devDependencies: {
-          'ember-data': 'beta'
-        }
-      }
+          'ember-data': 'beta',
+        },
+      },
     },
     {
       name: 'ember-ember-data-canary',
       bower: {
         devDependencies: {
-          'ember': 'components/ember#canary'
+          ember: 'components/ember#canary',
         },
         resolutions: {
-          'ember': 'canary'
-        }
+          ember: 'canary',
+        },
       },
       npm: {
         devDependencies: {
-          'ember-data': 'canary'
-        }
-      }
-    }
-  ]
+          'ember-data': 'canary',
+        },
+      },
+    },
+  ],
 };

@@ -6,5 +6,5 @@ export default Model.extend({
   owner: belongsTo('person'),
   dogNumber: attr('string'),
   sound: attr('string'),
-  tag: attr() // hash
+  tag: attr(), // hash
 });

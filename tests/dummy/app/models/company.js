@@ -7,5 +7,5 @@ export default Model.extend({
   name: attr('string'),
   profile: belongsTo('profile', { async: false }),
   users: hasMany('user', { async: true, inverse: 'company' }),
-  projects: hasMany('project', { async: true })
+  projects: hasMany('project', { async: true }),
 });

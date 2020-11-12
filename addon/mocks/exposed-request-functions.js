@@ -15,27 +15,35 @@ import MockAnyRequest from './mock-any-request';
 import MockLinksRequest from './mock-links-request';
 import RequestManager from './request-manager';
 
-export function mockSetup({responseTime, logLevel = 0} = {}) {
-  deprecate(`[ember-data-factory-guy] mockSetup is no longer needed. If you want to set logLevel or responseTime, use FactoryGuy.settings instead. If you don't need to set anything, it is safe to remove mockSetup`,
+export function mockSetup({ responseTime, logLevel = 0 } = {}) {
+  deprecate(
+    `[ember-data-factory-guy] mockSetup is no longer needed. If you want to set logLevel or responseTime, use FactoryGuy.settings instead. If you don't need to set anything, it is safe to remove mockSetup`,
     false,
-    {id: 'ember-data-factory-guy.mock-setup', until: '2.14.0'});
-  FactoryGuy.settings({logLevel, responseTime});
+    { id: 'ember-data-factory-guy.mock-setup', until: '2.14.0' },
+  );
+  FactoryGuy.settings({ logLevel, responseTime });
 }
 
 export function mockTeardown() {
-  deprecate(`[ember-data-factory-guy] mockTeardown is no longer needed. Mock teardown is now done automatically after every test.`,
+  deprecate(
+    `[ember-data-factory-guy] mockTeardown is no longer needed. Mock teardown is now done automatically after every test.`,
     false,
-    {id: 'ember-data-factory-guy.mock-teardown', until: '2.14.0'});
+    { id: 'ember-data-factory-guy.mock-teardown', until: '2.14.0' },
+  );
 }
 
-export function mock({type = 'GET', url, responseText} = {}) {
-  assert("[ember-data-factory-guy] mock requires at least a url", url);
+export function mock({ type = 'GET', url, responseText } = {}) {
+  assert('[ember-data-factory-guy] mock requires at least a url', url);
 
-  return new MockAnyRequest({type, url, responseText});
+  return new MockAnyRequest({ type, url, responseText });
 }
 
 export function mockLinks(model, relationshipKey) {
-  assert("[ember-data-factory-guy] mockLinks requires at least model and relationshipKey", model, relationshipKey);
+  assert(
+    '[ember-data-factory-guy] mockLinks requires at least model and relationshipKey',
+    model,
+    relationshipKey,
+  );
 
   return new MockLinksRequest(model, relationshipKey);
 }
@@ -78,23 +86,28 @@ export function mockLinks(model, relationshipKey) {
 export function mockFindRecord(...args) {
   let modelName;
 
-  assert(`[ember-data-factory-guy] mockFindRecord requires at least a model
-     name as first parameter`, args.length > 0);
+  assert(
+    `[ember-data-factory-guy] mockFindRecord requires at least a model
+     name as first parameter`,
+    args.length > 0,
+  );
 
   if (args[0] instanceof Model) {
     let model = args[0];
     modelName = model.constructor.modelName;
-    return new MockFindRecordRequest(modelName).returns({model});
+    return new MockFindRecordRequest(modelName).returns({ model });
   }
 
   modelName = args[0];
   let json = FactoryGuy.build.apply(FactoryGuy, arguments);
-  return new MockFindRecordRequest(modelName).returns({json});
+  return new MockFindRecordRequest(modelName).returns({ json });
 }
 
 export function mockFind() {
-  deprecate("`mockFind` - has been deprecated. Use `mockFindRecord` method instead`",
-    false, {id: 'ember-data-factory-guy.mock-find', until: '2.8.0'});
+  deprecate('`mockFind` - has been deprecated. Use `mockFindRecord` method instead`', false, {
+    id: 'ember-data-factory-guy.mock-find',
+    until: '2.8.0',
+  });
   return mockFindRecord.apply(this, arguments);
 }
 
@@ -121,16 +134,18 @@ export function mockReload(...args) {
     let record = args[0];
     modelName = record.constructor.modelName;
     id = record.id;
-  } else if (typeof args[0] === "string" && typeof parseInt(args[1]) === "number") {
+  } else if (typeof args[0] === 'string' && typeof parseInt(args[1]) === 'number') {
     modelName = args[0];
     id = args[1];
   }
 
-  assert("[ember-data-factory-guy] mockReload arguments are a model instance or a model type name and an id",
-    modelName && id);
+  assert(
+    '[ember-data-factory-guy] mockReload arguments are a model instance or a model type name and an id',
+    modelName && id,
+  );
 
-  let json = FactoryGuy.fixtureBuilder(modelName).convertForBuild(modelName, {id: id});
-  return new MockReloadRequest(modelName).returns({json});
+  let json = FactoryGuy.fixtureBuilder(modelName).convertForBuild(modelName, { id: id });
+  return new MockReloadRequest(modelName).returns({ json });
 }
 
 /**
@@ -160,14 +175,17 @@ export function mockReload(...args) {
 export function mockFindAll(...args) {
   let modelName = args[0];
 
-  assert(`[ember-data-factory-guy] mockFindAll requires at least a model
-     name as first parameter`, args.length > 0);
+  assert(
+    `[ember-data-factory-guy] mockFindAll requires at least a model
+     name as first parameter`,
+    args.length > 0,
+  );
 
   let mock = new MockFindAllRequest(modelName);
 
   if (args.length > 1) {
     let json = FactoryGuy.buildList.apply(FactoryGuy, args);
-    mock.returns({json});
+    mock.returns({ json });
   }
 
   return mock;
@@ -207,7 +225,10 @@ export function mockFindAll(...args) {
  @param {Array}  array of Model records to be 'returned' by query
  */
 export function mockQuery(modelName, queryParams = {}) {
-  assert('[ember-data-factory-guy] The second argument ( queryParams ) must be an object', typeOf(queryParams) === 'object');
+  assert(
+    '[ember-data-factory-guy] The second argument ( queryParams ) must be an object',
+    typeOf(queryParams) === 'object',
+  );
 
   return new MockQueryRequest(modelName, queryParams);
 }
@@ -260,7 +281,10 @@ export function mockQuery(modelName, queryParams = {}) {
  */
 export function mockQueryRecord(modelName, queryParams) {
   if (queryParams) {
-    assert('The second argument ( queryParams ) must be an object', typeOf(queryParams) === 'object');
+    assert(
+      'The second argument ( queryParams ) must be an object',
+      typeOf(queryParams) === 'object',
+    );
   }
 
   return new MockQueryRecordRequest(modelName, queryParams);
@@ -312,14 +336,17 @@ export function mockCreate(...args) {
     model = args[0];
     modelName = model.constructor.modelName;
   } else {
-    if (typeof args[0] === "string") {
+    if (typeof args[0] === 'string') {
       [modelName] = args;
     }
   }
 
-  assert(`[ember-data-factory-guy] To mockUpdate pass in a model instance or a modelName`, modelName);
+  assert(
+    `[ember-data-factory-guy] To mockUpdate pass in a model instance or a modelName`,
+    modelName,
+  );
 
-  return new MockCreateRequest(modelName, {model});
+  return new MockCreateRequest(modelName, { model });
 }
 
 /**
@@ -353,14 +380,17 @@ export function mockUpdate(...args) {
     id = model.id;
     modelName = model.constructor.modelName;
   } else {
-    if (typeof args[0] === "string") {
+    if (typeof args[0] === 'string') {
       [modelName, id] = args;
     }
   }
 
-  assert("[ember-data-factory-guy] To mockUpdate pass in a model instance or a modelName and an id or just a modelName", modelName);
+  assert(
+    '[ember-data-factory-guy] To mockUpdate pass in a model instance or a modelName and an id or just a modelName',
+    modelName,
+  );
 
-  return new MockUpdateRequest(modelName, {id, model});
+  return new MockUpdateRequest(modelName, { id, model });
 }
 
 /**
@@ -377,13 +407,13 @@ export function mockDelete(...args) {
     model = args[0];
     id = model.id;
     modelName = model.constructor.modelName;
-  } else if (typeof args[0] === "string") {
-    [modelName, id] = args
+  } else if (typeof args[0] === 'string') {
+    [modelName, id] = args;
   }
 
   assert(`[ember-data-factory-guy] mockDelete requires at least a model type name`, modelName);
 
-  return new MockDeleteRequest(modelName, {id, model});
+  return new MockDeleteRequest(modelName, { id, model });
 }
 
 /**

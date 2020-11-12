@@ -2,7 +2,6 @@ import FactoryGuy from '../factory-guy';
 import MockRequest from './mock-request';
 
 export default class extends MockRequest {
-
   constructor(modelName, requestType) {
     super();
     this.modelName = modelName;
@@ -35,7 +34,7 @@ export default class extends MockRequest {
       this.get('id'),
       this.makeFakeSnapshot(),
       this.requestType,
-      this.queryParams
+      this.queryParams,
     );
   }
 
@@ -51,6 +50,6 @@ export default class extends MockRequest {
       record = FactoryGuy.store.peekRecord(this.modelName, this.get('id'));
     }
 
-    return {adapterOptions: this.adapterOptions, record};
+    return { adapterOptions: this.adapterOptions, record };
   }
 }

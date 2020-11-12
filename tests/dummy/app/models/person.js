@@ -7,6 +7,6 @@ export default Model.extend({
   name: attr('string'),
   style: attr('string'),
   category: attr('string'),
-  company: belongsTo('company', {async: false}),
-  outfits: hasMany('outfit', {async: false})
+  company: belongsTo('company', { async: false }),
+  outfits: hasMany('outfit', { async: false }),
 });

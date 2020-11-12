@@ -9,19 +9,19 @@ import RESTFixtureBuilder from 'ember-data-factory-guy/builder/rest-fixture-buil
 import JSONFixtureBuilder from 'ember-data-factory-guy/builder/json-fixture-builder';
 import DRFFixtureBuilder from 'ember-data-factory-guy/builder/drf-fixture-builder';
 import ActiveModelFixtureBuilder from 'ember-data-factory-guy/builder/active-model-fixture-builder';
-import { inlineSetup } from "../helpers/utility-methods";
+import { inlineSetup } from '../helpers/utility-methods';
 
 let factory, store;
-module('FixtureBuilderFactory', function(hooks) {
+module('FixtureBuilderFactory', function (hooks) {
   setupTest(hooks);
   inlineSetup(hooks, '-json-api');
 
-  hooks.beforeEach(function() {
+  hooks.beforeEach(function () {
     store = this.owner.lookup('service:store');
     factory = new FixtureBuilderFactory(store);
   });
 
-  test("returns the correct fixtureBuilder for serializer type of modelName", function(assert) {
+  test('returns the correct fixtureBuilder for serializer type of modelName', function (assert) {
     let tests = [
       // serializer type   expected FixtureBuilder
       [DS.RESTSerializer, RESTFixtureBuilder],
@@ -29,7 +29,7 @@ module('FixtureBuilderFactory', function(hooks) {
       [ActiveModelSerializer, ActiveModelFixtureBuilder],
       [DRFSerializer, DRFFixtureBuilder],
       [DS.JSONAPISerializer, JSONAPIFixtureBuilder],
-      [null, JSONAPIFixtureBuilder]
+      [null, JSONAPIFixtureBuilder],
     ];
 
     let serializer;
@@ -38,9 +38,12 @@ module('FixtureBuilderFactory', function(hooks) {
 
     for (let test of tests) {
       let [serializerType, expectedFixtureBuilder] = test;
-      serializer = serializerType && (new serializerType);
+      serializer = serializerType && new serializerType();
       let fixtureBuilder = factory.fixtureBuilder(modelName);
-      assert.ok(fixtureBuilder instanceof expectedFixtureBuilder, `${serializerType} returns ${expectedFixtureBuilder.name}`);
+      assert.ok(
+        fixtureBuilder instanceof expectedFixtureBuilder,
+        `${serializerType} returns ${expectedFixtureBuilder.name}`,
+      );
     }
   });
 });

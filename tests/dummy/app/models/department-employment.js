@@ -5,5 +5,5 @@ import { fragment } from 'ember-data-model-fragments/attributes';
 export default Fragment.extend({
   startDate: attr('date'),
   endDate: attr('date'),
-  department: fragment('department')
+  department: fragment('department'),
 });

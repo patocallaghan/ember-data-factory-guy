@@ -4,5 +4,5 @@ import { array } from 'ember-data-model-fragments/attributes';
 
 export default Model.extend({
   income: attr('number'),
-  benefits: array('string')
+  benefits: array('string'),
 });

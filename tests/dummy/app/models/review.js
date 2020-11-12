@@ -3,5 +3,5 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   rating: attr('number'),
-  date: attr('date')
+  date: attr('date'),
 });

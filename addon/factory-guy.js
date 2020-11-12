@@ -19,7 +19,6 @@ try {
   // do nothing
 }
 
-
 class FactoryGuy {
   /**
    * Setting for FactoryGuy.
@@ -29,8 +28,8 @@ class FactoryGuy {
    *
    * @param logLevel [0/1]
    */
-  settings({logLevel = 0, responseTime = null} = {}) {
-    RequestManager.settings({responseTime});
+  settings({ logLevel = 0, responseTime = null } = {}) {
+    RequestManager.settings({ responseTime });
     this.logLevel = logLevel;
     return RequestManager.settings();
   }
@@ -38,7 +37,7 @@ class FactoryGuy {
   setStore(aStore) {
     assert(
       `[ember-data-factory-guy] FactoryGuy#setStore needs a valid store instance. You passed in [${aStore}]`,
-      aStore instanceof DS.Store
+      aStore instanceof DS.Store,
     );
     this.store = aStore;
     this.fixtureBuilderFactory = new FixtureBuilderFactory(this.store);
@@ -145,7 +144,7 @@ class FactoryGuy {
    */
   generate(nameOrFunction) {
     let sortaRandomName = Math.floor((1 + Math.random()) * 65536).toString(16) + Date.now();
-    return function() {
+    return function () {
       // this function will be called by ModelDefinition, which has it's own generate method
       if (typeOf(nameOrFunction) === 'function') {
         return this.generate(sortaRandomName, nameOrFunction);
@@ -191,8 +190,8 @@ class FactoryGuy {
       if (this.isModelAFragment(modelName) && buildType === 'build') {
         return this.build(...originalArgs).get();
       }
-      return this.buildRaw(assign(args, {buildType}));
-    }
+      return this.buildRaw(assign(args, { buildType }));
+    };
   }
 
   /**
@@ -231,8 +230,8 @@ class FactoryGuy {
       if (this.isModelAFragment(modelName) && buildType === 'build') {
         return this.buildList(...originalArgs).get();
       }
-      return this.buildRawList(assign(args, {buildType}));
-    }
+      return this.buildRawList(assign(args, { buildType }));
+    };
   }
 
   /**
@@ -256,9 +255,9 @@ class FactoryGuy {
    @returns {Object} json fixture
    */
   build(...originalArgs) {
-    let args      = FactoryGuy.extractArguments(...originalArgs),
-        modelName = FactoryGuy.lookupModelForFixtureName(args.name, true),
-        fixture   = this.buildRaw(assign(args, {buildType: 'build'}));
+    let args = FactoryGuy.extractArguments(...originalArgs),
+      modelName = FactoryGuy.lookupModelForFixtureName(args.name, true),
+      fixture = this.buildRaw(assign(args, { buildType: 'build' }));
 
     return this.fixtureBuilder(modelName).convertForBuild(modelName, fixture);
   }
@@ -272,7 +271,7 @@ class FactoryGuy {
    @param buildType 'build' or 'make'
    @returns {Object}
    */
-  buildRaw({name, opts, traits, buildType = 'build'} = {}) {
+  buildRaw({ name, opts, traits, buildType = 'build' } = {}) {
     let definition = FactoryGuy.lookupDefinitionForFixtureName(name, true);
 
     return definition.build(name, opts, traits, buildType);
@@ -303,8 +302,8 @@ class FactoryGuy {
 
     args = FactoryGuy.extractListArguments(...args);
 
-    let list      = this.buildRawList(assign(args, {buildType: 'build'})),
-        modelName = FactoryGuy.lookupModelForFixtureName(args.name);
+    let list = this.buildRawList(assign(args, { buildType: 'build' })),
+      modelName = FactoryGuy.lookupModelForFixtureName(args.name);
 
     return this.fixtureBuilder(modelName).convertForBuild(modelName, list);
   }
@@ -318,7 +317,7 @@ class FactoryGuy {
    @param buildType 'build' or 'make'
    @returns {Object}
    */
-  buildRawList({name, number, opts, buildType = 'build'} = {}) {
+  buildRawList({ name, number, opts, buildType = 'build' } = {}) {
     let definition = FactoryGuy.lookupDefinitionForFixtureName(name, true);
 
     if (number >= 0) {
@@ -326,7 +325,7 @@ class FactoryGuy {
       return definition.buildList(name, number, parts.traits, parts.opts, buildType);
     }
 
-    return opts.map(function(innerArgs) {
+    return opts.map(function (innerArgs) {
       if (typeOf(innerArgs) !== 'array') {
         innerArgs = [innerArgs];
       }
@@ -347,10 +346,10 @@ class FactoryGuy {
   attributesFor(...originalArgs) {
     this.ensureStore();
 
-    let args        = FactoryGuy.extractArguments(...originalArgs),
-        definition  = FactoryGuy.lookupDefinitionForFixtureName(args.name, true),
-        {modelName} = definition,
-        fixture     = this.buildRaw(assign(args, {buildType: 'make'}));
+    let args = FactoryGuy.extractArguments(...originalArgs),
+      definition = FactoryGuy.lookupDefinitionForFixtureName(args.name, true),
+      { modelName } = definition,
+      fixture = this.buildRaw(assign(args, { buildType: 'make' }));
 
     if (this.isModelAFragment(modelName)) {
       return fixture;
@@ -373,17 +372,17 @@ class FactoryGuy {
   make(...originalArgs) {
     this.ensureStore();
 
-    let args        = FactoryGuy.extractArguments(...originalArgs),
-        definition  = FactoryGuy.lookupDefinitionForFixtureName(args.name, true),
-        {modelName} = definition,
-        fixture     = this.buildRaw(assign(args, {buildType: 'make'}));
+    let args = FactoryGuy.extractArguments(...originalArgs),
+      definition = FactoryGuy.lookupDefinitionForFixtureName(args.name, true),
+      { modelName } = definition,
+      fixture = this.buildRaw(assign(args, { buildType: 'make' }));
 
     if (this.isModelAFragment(modelName)) {
       return join(() => this.store.createFragment(modelName, fixture));
     }
 
-    let data  = this.fixtureBuilder(modelName).convertForMake(modelName, fixture),
-        model = join(() => this.store.push(data));
+    let data = this.fixtureBuilder(modelName).convertForMake(modelName, fixture),
+      model = join(() => this.store.push(data));
 
     if (definition.hasAfterMake()) {
       definition.applyAfterMake(model, args.opts);
@@ -402,9 +401,9 @@ class FactoryGuy {
   makeNew(...originalArgs) {
     this.ensureStore();
 
-    let args      = FactoryGuy.extractArguments(...originalArgs),
-        modelName = FactoryGuy.lookupModelForFixtureName(args.name, true),
-        fixture   = this.buildRaw(assign(args, {buildType: 'make'}));
+    let args = FactoryGuy.extractArguments(...originalArgs),
+      modelName = FactoryGuy.lookupModelForFixtureName(args.name, true),
+      fixture = this.buildRaw(assign(args, { buildType: 'make' }));
 
     delete fixture.id;
 
@@ -437,15 +436,17 @@ class FactoryGuy {
     this.ensureStore();
     this.ensureNameInArguments('makeList', args);
 
-    let {name, number, opts} = FactoryGuy.extractListArguments(...args);
+    let { name, number, opts } = FactoryGuy.extractListArguments(...args);
 
     this.ensureNameIsValid(name);
 
     if (number >= 0) {
-      return Array(number).fill().map(() => this.make(...[name, ...opts]));
+      return Array(number)
+        .fill()
+        .map(() => this.make(...[name, ...opts]));
     }
 
-    return opts.map(innerArgs => {
+    return opts.map((innerArgs) => {
       if (typeOf(innerArgs) !== 'array') {
         innerArgs = [innerArgs];
       }
@@ -457,7 +458,7 @@ class FactoryGuy {
     assert(
       `[ember-data-factory-guy] ${method} needs at least a name
       ( of model or named factory definition )`,
-      args.length > 0
+      args.length > 0,
     );
   }
 
@@ -465,7 +466,8 @@ class FactoryGuy {
     assert(
       `[ember-data-factory-guy] FactoryGuy does not have the application's store.
        Use manualSetup(this) in model/component test
-       before using make/makeList`, this.store
+       before using make/makeList`,
+      this.store,
     );
   }
 
@@ -506,7 +508,7 @@ class FactoryGuy {
   afterDestroyStore(store) {
     const self = this;
     const originalWillDestroy = store.willDestroy.bind(store);
-    store.willDestroy = function() {
+    store.willDestroy = function () {
       originalWillDestroy();
       self.store = null;
       self.fixtureBuilderFactory = null;
@@ -538,15 +540,15 @@ class FactoryGuy {
 
    @params {Array} except list of models you don't want to mark as cached
    */
-  cacheOnlyMode({except = []} = {}) {
+  cacheOnlyMode({ except = [] } = {}) {
     let store = this.store;
     let findAdapter = store.adapterFor.bind(store);
 
-    store.adapterFor = function(name) {
+    store.adapterFor = function (name) {
       let adapter = findAdapter(name);
       let shouldCache = () => {
         if (isPresent(except)) {
-          return (A(except).includes(name));
+          return A(except).includes(name);
         }
         return false;
       };
@@ -575,14 +577,14 @@ class FactoryGuy {
    */
   static extractListArguments(...args) {
     args = args.slice();
-    let name   = args.shift(),
-        number = args[0] || 0;
+    let name = args.shift(),
+      number = args[0] || 0;
     if (typeof number === 'number') {
       args.shift();
     } else {
       number = undefined;
     }
-    return {name, number, opts: args};
+    return { name, number, opts: args };
   }
 
   /**
@@ -599,7 +601,7 @@ class FactoryGuy {
     if (!name) {
       throw new Error('[ember-data-factory-guy] build/make needs a factory name to build');
     }
-    return assign({name}, FactoryGuy.extractArgumentsShort(...args));
+    return assign({ name }, FactoryGuy.extractArgumentsShort(...args));
   }
 
   static extractArgumentsShort(...args) {
@@ -610,7 +612,7 @@ class FactoryGuy {
     }
     // whatever is left are traits
     let traits = A(args).compact();
-    return {opts, traits};
+    return { opts, traits };
   }
 
   /**
@@ -631,7 +633,7 @@ class FactoryGuy {
 
     assert(
       `[ember-data-factory-guy] Can't find that factory named [ ${name} ]`,
-      !definition && assertItExists
+      !definition && assertItExists,
     );
   }
 
@@ -649,16 +651,15 @@ class FactoryGuy {
       return definition.modelName;
     }
   }
-
 }
 
-let factoryGuy    = new FactoryGuy(),
-    make          = factoryGuy.make.bind(factoryGuy),
-    makeNew       = factoryGuy.makeNew.bind(factoryGuy),
-    makeList      = factoryGuy.makeList.bind(factoryGuy),
-    build         = factoryGuy.build.bind(factoryGuy),
-    buildList     = factoryGuy.buildList.bind(factoryGuy),
-    attributesFor = factoryGuy.attributesFor.bind(factoryGuy);
+let factoryGuy = new FactoryGuy(),
+  make = factoryGuy.make.bind(factoryGuy),
+  makeNew = factoryGuy.makeNew.bind(factoryGuy),
+  makeList = factoryGuy.makeList.bind(factoryGuy),
+  build = factoryGuy.build.bind(factoryGuy),
+  buildList = factoryGuy.buildList.bind(factoryGuy),
+  attributesFor = factoryGuy.attributesFor.bind(factoryGuy);
 
 export { make, makeNew, makeList, build, buildList, attributesFor };
 export default factoryGuy;

@@ -18,5 +18,4 @@ export default class DrfFixtureConverter extends JSONFixtureConverter {
     }
     return fixture;
   }
-
 }

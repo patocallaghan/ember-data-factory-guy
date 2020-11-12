@@ -1,17 +1,10 @@
 import { assert } from '@ember/debug';
 import { assign } from '@ember/polyfills';
-import {
-  isEmptyObject,
-  isEquivalent,
-  isPartOf,
-  param,
-  toParams
-} from '../utils/helper-functions';
+import { isEmptyObject, isEquivalent, isPartOf, param, toParams } from '../utils/helper-functions';
 import FactoryGuy from '../factory-guy';
 import RequestManager from './request-manager';
 
 export default class {
-
   constructor() {
     this.status = 200;
     this.responseHeaders = {};
@@ -35,21 +28,18 @@ export default class {
 
   /**
    */
-  get() {
-  }
+  get() {}
 
   /**
    * @returns {String}
    */
-  getUrl() {
-  }
+  getUrl() {}
 
   getType() {
     return 'GET';
   }
 
-  returns(/*options = {}*/) {
-  }
+  returns(/*options = {}*/) {}
 
   addResponseHeaders(headers) {
     assign(this.responseHeaders, headers);
@@ -66,11 +56,15 @@ export default class {
   }
 
   fails(opts = {}) {
+    // eslint-disable-next-line no-prototype-builtins
     let convertErrors = opts.hasOwnProperty('convertErrors') ? opts.convertErrors : true,
-        status        = opts.status || 500,
-        response      = opts.response || null;
-    assert(`[ember-data-factory-guy] 'fails' method status code must be 3XX, 4XX or 5XX,
-        you are using: ${status}`, this.isErrorStatus(status));
+      status = opts.status || 500,
+      response = opts.response || null;
+    assert(
+      `[ember-data-factory-guy] 'fails' method status code must be 3XX, 4XX or 5XX,
+        you are using: ${status}`,
+      this.isErrorStatus(status),
+    );
 
     this.status = status;
     this.errorResponse = response;
@@ -94,17 +88,17 @@ export default class {
     return {
       responseText: this.actualResponseJson(),
       headers: this.responseHeaders,
-      status: this.status
+      status: this.status,
     };
   }
 
   logInfo() {
     if (FactoryGuy.logLevel > 0) {
-      const json   = JSON.parse(this.getResponse().responseText),
-            name   = this.constructor.name.replace('Request', ''),
-            type   = this.getType(),
-            status = `[${this.status}]`,
-            url    = this.getUrl();
+      const json = JSON.parse(this.getResponse().responseText),
+        name = this.constructor.name.replace('Request', ''),
+        type = this.getType(),
+        status = `[${this.status}]`,
+        url = this.getUrl();
 
       let fullUrl = url;
       if (!isEmptyObject(this.queryParams)) {

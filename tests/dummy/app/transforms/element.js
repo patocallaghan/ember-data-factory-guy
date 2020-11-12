@@ -1,11 +1,11 @@
 import DS from 'ember-data';
 
 const REVERSE_SYMBOL_TABLE = {
-  'carbon': 'C'
+  carbon: 'C',
 };
 
 const SYMBOL_TABLE = {
-  'C': 'carbon'
+  C: 'carbon',
 };
 
 export default DS.Transform.extend({
@@ -21,5 +21,5 @@ export default DS.Transform.extend({
       return SYMBOL_TABLE[serialized];
     }
     return serialized;
-  }
+  },
 });

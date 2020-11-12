@@ -1,11 +1,14 @@
 import MockRequest from './mock-request';
 import {
-  isEmptyObject, isEquivalent, isPartOf, paramsFromRequestBody, toParams
-} from "../utils/helper-functions";
+  isEmptyObject,
+  isEquivalent,
+  isPartOf,
+  paramsFromRequestBody,
+  toParams,
+} from '../utils/helper-functions';
 
 export default class MockAnyRequest extends MockRequest {
-
-  constructor({type = 'GET', url, responseText, status = 200}) {
+  constructor({ type = 'GET', url, responseText, status = 200 }) {
     super();
     this.responseJson = responseText;
     this.url = url;
@@ -53,5 +56,4 @@ export default class MockAnyRequest extends MockRequest {
     }
     return comparisonFunction(toParams(requestParams), toParams(handlerParams));
   }
-
 }

@@ -2,9 +2,9 @@ import { isPresent } from '@ember/utils';
 import RequestWrapper from './request-wrapper';
 import Pretender from 'pretender';
 
-let wrappers  = {},
-    pretender = null,
-    delay     = 0;
+let wrappers = {},
+  pretender = null,
+  delay = 0;
 
 /**
  * RequestManager controls setting up pretender to handle the mocks that are
@@ -18,7 +18,6 @@ let wrappers  = {},
  * wrapper to new one.
  */
 export default class {
-
   /**
    * For now, you can only set the response delay.
    *
@@ -57,8 +56,8 @@ export default class {
    */
   static addHandler(handler) {
     let { type, url } = this.getTypeUrl(handler),
-        key           = this.getKey(type, url),
-        wrapper       = wrappers[key];
+      key = this.getKey(type, url),
+      wrapper = wrappers[key];
 
     if (!wrapper) {
       wrapper = new RequestWrapper();
@@ -79,8 +78,8 @@ export default class {
     // get the old type, url info from last mockId
     // in order to find the wrapper it was in
     let { type, url } = handler.mockId,
-        key           = this.getKey(type, url),
-        wrapper       = wrappers[key];
+      key = this.getKey(type, url),
+      wrapper = wrappers[key];
 
     if (wrapper) {
       wrapper.removeHandler(handler);

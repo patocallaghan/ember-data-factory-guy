@@ -4,16 +4,15 @@ export default DS.RESTSerializer.extend(DS.EmbeddedRecordsMixin, {
   attrs: {
     salary: {
       serialize: true,
-      deserialize: 'records'
+      deserialize: 'records',
     },
     reviews: {
       serialize: true,
-      deserialize: 'records'
-    }
+      deserialize: 'records',
+    },
   },
 
   keyForAttribute() {
     return this._super(...arguments);
-  }
-  
+  },
 });

@@ -2,7 +2,7 @@ import { isEmpty, typeOf } from '@ember/utils';
 import { dasherize } from '@ember/string';
 import { A } from '@ember/array';
 import FixtureConverter from './fixture-converter';
-import { entries } from "../utils/helper-functions";
+import { entries } from '../utils/helper-functions';
 
 /**
  * Using `serializeMode` to create a payload the way ember-data would serialize types
@@ -11,9 +11,8 @@ import { entries } from "../utils/helper-functions";
  *
  */
 export default class JSONAPIFixtureConverter extends FixtureConverter {
-
-  constructor(store, {transformKeys = true, serializeMode = false} = {}) {
-    super(store, {transformKeys, serializeMode});
+  constructor(store, { transformKeys = true, serializeMode = false } = {}) {
+    super(store, { transformKeys, serializeMode });
     this.typeTransformFn = this.serializeMode ? this.typeTransformViaSerializer : dasherize;
     this.defaultKeyTransformFn = dasherize;
     this.polymorphicTypeTransformFn = dasherize;
@@ -26,7 +25,7 @@ export default class JSONAPIFixtureConverter extends FixtureConverter {
   }
 
   emptyResponse(_, options = {}) {
-    return {data: options.useValue || null};
+    return { data: options.useValue || null };
   }
 
   /**
@@ -38,7 +37,7 @@ export default class JSONAPIFixtureConverter extends FixtureConverter {
    * @returns {*}
    */
   createPayload(modelName, fixture) {
-    return {data: fixture};
+    return { data: fixture };
   }
 
   /**
@@ -62,9 +61,9 @@ export default class JSONAPIFixtureConverter extends FixtureConverter {
    */
   normalizeAssociation(record) {
     if (typeOf(record) === 'object') {
-      return {type: this.typeTransformFn(record.type), id: record.id};
+      return { type: this.typeTransformFn(record.type), id: record.id };
     } else {
-      return {type: this.typeTransformFn(record.constructor.modelName), id: record.id};
+      return { type: this.typeTransformFn(record.constructor.modelName), id: record.id };
     }
   }
 
@@ -126,7 +125,7 @@ export default class JSONAPIFixtureConverter extends FixtureConverter {
   }
 
   assignRelationship(object) {
-    return {data: object};
+    return { data: object };
   }
 
   /**
@@ -156,7 +155,7 @@ export default class JSONAPIFixtureConverter extends FixtureConverter {
   assignLinks(relationshipData, links) {
     for (let [relationshipKey, link] of entries(links || {})) {
       let data = relationshipData[relationshipKey];
-      data = Object.assign({links: {related: link}}, data);
+      data = Object.assign({ links: { related: link } }, data);
       relationshipData[relationshipKey] = data;
     }
   }

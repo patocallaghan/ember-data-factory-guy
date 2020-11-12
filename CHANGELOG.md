@@ -9,9 +9,11 @@
 - SyntaxError: ember-data-factory-guy/scenario.js: Unexpected token \(6:21\) [\#278](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/278)
 
 ## [v2.12.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.12.2) (2017-03-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.12.1...v2.12.2)
 
 ## [v2.12.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.12.1) (2017-03-22)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.12.0...v2.12.1)
 
 **Merged pull requests:**
@@ -19,9 +21,11 @@
 - Silence JavaScript preprocessor deprecation warning on Ember 2.12 [\#277](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/277) ([vluoto](https://github.com/vluoto))
 
 ## [v2.12.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.12.0) (2017-03-18)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.7...v2.12.0)
 
 ## [v2.11.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.7) (2017-03-14)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.6...v2.11.7)
 
 **Merged pull requests:**
@@ -29,6 +33,7 @@
 - fix build if ember-data-factory-guy used for tests inside addon [\#276](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/276) ([canufeel](https://github.com/canufeel))
 
 ## [v2.11.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.6) (2017-02-16)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.5...v2.11.6)
 
 **Closed issues:**
@@ -41,9 +46,11 @@
 - Some tweaks to the README [\#274](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/274) ([lorcan](https://github.com/lorcan))
 
 ## [v2.11.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.5) (2017-02-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.4...v2.11.5)
 
 ## [v2.11.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.4) (2017-02-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.3...v2.11.4)
 
 **Closed issues:**
@@ -55,12 +62,15 @@
 - Update package.json to be the correct release number [\#271](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/271) ([patocallaghan](https://github.com/patocallaghan))
 
 ## [v2.11.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.3) (2017-01-26)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.2...v2.11.3)
 
 ## [v2.11.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.2) (2017-01-26)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.1...v2.11.2)
 
 ## [v2.11.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.1) (2017-01-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.11.0...v2.11.1)
 
 **Closed issues:**
@@ -68,9 +78,11 @@
 - add ability to make models in the new state [\#269](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/269)
 
 ## [v2.11.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.11.0) (2017-01-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.10.1...v2.11.0)
 
 ## [v2.10.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.10.1) (2017-01-21)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.10.0...v2.10.1)
 
 **Merged pull requests:**
@@ -78,6 +90,7 @@
 - Fix DjangoSerializer import [\#270](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/270) ([erkarl](https://github.com/erkarl))
 
 ## [v2.10.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.10.0) (2017-01-10)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.8...v2.10.0)
 
 **Merged pull requests:**
@@ -85,6 +98,7 @@
 - Use assert rather than warn for missing traits [\#266](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/266) ([lorcan](https://github.com/lorcan))
 
 ## [v2.9.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.8) (2016-12-13)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.7...v2.9.8)
 
 **Merged pull requests:**
@@ -93,9 +107,11 @@
 - Allow mockCreate/mockUpdate to receive a matching function [\#263](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/263) ([lorcan](https://github.com/lorcan))
 
 ## [v2.9.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.7) (2016-11-30)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.5...v2.9.7)
 
 ## [v2.9.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.5) (2016-11-29)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.4...v2.9.5)
 
 **Closed issues:**
@@ -103,6 +119,7 @@
 - `Cannot read property '\_super' of undefined` with Ember 2.10.0 [\#260](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/260)
 
 ## [v2.9.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.4) (2016-11-29)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.3...v2.9.4)
 
 **Implemented enhancements:**
@@ -110,11 +127,12 @@
 - allow for afterMake callbacks in named definitions [\#79](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/79)
 
 ## [v2.9.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.3) (2016-11-16)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.2...v2.9.3)
 
 **Implemented enhancements:**
 
-- implement the rest of the urlFor... methods ..  urlForFindRecord is only one currently supported [\#246](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/246)
+- implement the rest of the urlFor... methods .. urlForFindRecord is only one currently supported [\#246](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/246)
 
 **Merged pull requests:**
 
@@ -122,9 +140,11 @@
 - addIncludedArray\(\) replacing payload data with included [\#253](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/253) ([cristinawithout](https://github.com/cristinawithout))
 
 ## [v2.9.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.2) (2016-11-07)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.1...v2.9.2)
 
 ## [v2.9.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.1) (2016-11-05)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.9.0...v2.9.1)
 
 **Closed issues:**
@@ -132,9 +152,11 @@
 - Using different adapter/serializer for different models may cause an issue if different from application adapter/serilizer [\#256](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/256)
 
 ## [v2.9.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.9.0) (2016-11-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.8.2...v2.9.0)
 
 ## [v2.8.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.8.2) (2016-10-27)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.8.1...v2.8.2)
 
 **Closed issues:**
@@ -146,6 +168,7 @@
 - Add support for using factory-guy in other environments [\#255](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/255) ([juwara0](https://github.com/juwara0))
 
 ## [v2.8.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.8.1) (2016-10-20)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.8.0...v2.8.1)
 
 **Merged pull requests:**
@@ -153,9 +176,11 @@
 - Fix a link to mockFindRecord in the readme [\#252](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/252) ([whatthewhat](https://github.com/whatthewhat))
 
 ## [v2.8.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.8.0) (2016-09-26)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.10...v2.8.0)
 
 ## [v2.7.10](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.10) (2016-09-20)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.9...v2.7.10)
 
 **Closed issues:**
@@ -167,6 +192,7 @@
 - Use Array.includes instead of deprecated contains if possible [\#251](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/251) ([mdentremont](https://github.com/mdentremont))
 
 ## [v2.7.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.9) (2016-09-13)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.8...v2.7.9)
 
 **Closed issues:**
@@ -175,6 +201,7 @@
 - Test Helpers in Factory break development build [\#247](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/247)
 
 ## [v2.7.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.8) (2016-09-11)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.7...v2.7.8)
 
 **Closed issues:**
@@ -182,6 +209,7 @@
 - Manually adding model fragment causing error [\#244](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/244)
 
 ## [v2.7.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.7) (2016-09-08)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.6...v2.7.7)
 
 **Closed issues:**
@@ -190,6 +218,7 @@
 - Mock URL matching not working with query params [\#239](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/239)
 
 ## [v2.7.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.6) (2016-09-06)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.5...v2.7.6)
 
 **Closed issues:**
@@ -207,6 +236,7 @@
 - es6 args destructuring removed from public api on mocks [\#236](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/236) ([youroff](https://github.com/youroff))
 
 ## [v2.7.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.5) (2016-08-25)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.4...v2.7.5)
 
 **Closed issues:**
@@ -217,6 +247,7 @@
 - TypeError: uri.path is not a function [\#225](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/225)
 
 ## [v2.7.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.4) (2016-08-22)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.3...v2.7.4)
 
 **Closed issues:**
@@ -232,9 +263,11 @@
 - withSomeParams modifier for mockGetRequest [\#227](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/227) ([youroff](https://github.com/youroff))
 
 ## [v2.7.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.3) (2016-08-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.2...v2.7.3)
 
 ## [v2.7.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.2) (2016-07-26)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.1...v2.7.2)
 
 **Closed issues:**
@@ -246,6 +279,7 @@
 - mockFind does not return a failed response [\#221](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/221) ([daibhin](https://github.com/daibhin))
 
 ## [v2.7.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.1) (2016-07-13)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0...v2.7.1)
 
 **Closed issues:**
@@ -253,6 +287,7 @@
 - \[FEATURE REQUEST\] Add support for serializer renamed fields \(ie: `attrs: { localKey: 'serverKey'}`\) [\#219](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/219)
 
 ## [v2.7.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0) (2016-07-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.11...v2.7.0)
 
 **Closed issues:**
@@ -260,6 +295,7 @@
 - Make throws a registry.resolve error [\#218](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/218)
 
 ## [v2.7.0-beta.11](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.11) (2016-07-08)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.10...v2.7.0-beta.11)
 
 **Closed issues:**
@@ -267,6 +303,7 @@
 - .match\(\) for mockUpdate\(\) [\#216](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/216)
 
 ## [v2.7.0-beta.10](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.10) (2016-07-07)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.9...v2.7.0-beta.10)
 
 **Implemented enhancements:**
@@ -282,6 +319,7 @@
 - Tests for mockUpdate.match \#216 [\#217](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/217) ([cristinawithout](https://github.com/cristinawithout))
 
 ## [v2.7.0-beta.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.9) (2016-07-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.8...v2.7.0-beta.9)
 
 **Closed issues:**
@@ -289,6 +327,7 @@
 - match\(\) fails with JSONAPI for relationship when serializer's payloadKeyFromModelName\(\) doesn't pluralize [\#213](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/213)
 
 ## [v2.7.0-beta.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.8) (2016-06-30)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.7...v2.7.0-beta.8)
 
 **Merged pull requests:**
@@ -296,28 +335,35 @@
 - Issue 213 jsonapi payloadkey [\#214](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/214) ([cristinawithout](https://github.com/cristinawithout))
 
 ## [v2.7.0-beta.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.7) (2016-06-28)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.6...v2.7.0-beta.7)
 
 ## [v2.7.0-beta.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.6) (2016-06-27)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.5...v2.7.0-beta.6)
 
 ## [v2.7.0-beta.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.5) (2016-06-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.4...v2.7.0-beta.5)
 
 ## [v2.7.0-beta.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.4) (2016-06-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.3...v2.7.0-beta.4)
 
 ## [v2.7.0-beta.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.3) (2016-06-21)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.2...v2.7.0-beta.3)
 
 **Implemented enhancements:**
 
-- Make Factory Guy available in development  [\#206](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/206)
+- Make Factory Guy available in development [\#206](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/206)
 
 ## [v2.7.0-beta.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.2) (2016-06-18)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.7.0-beta.1...v2.7.0-beta.2)
 
 ## [v2.7.0-beta.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.7.0-beta.1) (2016-06-18)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.7...v2.7.0-beta.1)
 
 **Closed issues:**
@@ -329,6 +375,7 @@
 - Adding factories to the app instead [\#211](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/211) ([taras](https://github.com/taras))
 
 ## [v2.6.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.7) (2016-06-15)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.6...v2.6.7)
 
 **Closed issues:**
@@ -340,6 +387,7 @@
 - Make more resilient about adding query parameters at levels below Ember [\#209](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/209) ([YoranBrondsema](https://github.com/YoranBrondsema))
 
 ## [v2.6.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.6) (2016-06-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.5...v2.6.6)
 
 **Closed issues:**
@@ -347,6 +395,7 @@
 - ActiveModel sideload or a mockQuery update/create variant [\#205](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/205)
 
 ## [v2.6.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.5) (2016-05-31)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.4...v2.6.5)
 
 **Closed issues:**
@@ -355,6 +404,7 @@
 - using .andFail with a status that isn't an error code [\#115](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/115)
 
 ## [v2.6.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.4) (2016-05-28)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.3...v2.6.4)
 
 **Merged pull requests:**
@@ -362,6 +412,7 @@
 - Add support for deleting any model to mockDelete [\#207](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/207) ([mattmcginnis](https://github.com/mattmcginnis))
 
 ## [v2.6.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.3) (2016-05-27)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.2...v2.6.3)
 
 **Closed issues:**
@@ -371,6 +422,7 @@
 - handleCreate does not mock response with relationships [\#141](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/141)
 
 ## [v2.6.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.2) (2016-05-26)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.1...v2.6.2)
 
 **Closed issues:**
@@ -383,9 +435,11 @@
 - Update README.md [\#202](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/202) ([oniofchaos](https://github.com/oniofchaos))
 
 ## [v2.6.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.1) (2016-05-20)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.6.0...v2.6.1)
 
 ## [v2.6.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.6.0) (2016-05-15)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.6...v2.6.0)
 
 **Closed issues:**
@@ -393,6 +447,7 @@
 - Error due to primaryKey in serializer [\#198](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/198)
 
 ## [v2.5.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.6) (2016-05-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.5...v2.5.6)
 
 **Closed issues:**
@@ -406,9 +461,11 @@
 - Add support for primaryKey in serializers [\#199](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/199) ([mattmcginnis](https://github.com/mattmcginnis))
 
 ## [v2.5.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.5) (2016-05-09)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.4...v2.5.5)
 
 ## [v2.5.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.4) (2016-05-09)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.3...v2.5.4)
 
 **Merged pull requests:**
@@ -416,6 +473,7 @@
 - Updated README with documentation about using ember-data-model-fragments [\#194](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/194) ([patocallaghan](https://github.com/patocallaghan))
 
 ## [v2.5.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.3) (2016-05-03)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.2...v2.5.3)
 
 **Merged pull requests:**
@@ -423,6 +481,7 @@
 - Fix type.match crasher [\#193](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/193) ([patocallaghan](https://github.com/patocallaghan))
 
 ## [v2.5.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.2) (2016-05-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.1...v2.5.2)
 
 **Closed issues:**
@@ -430,9 +489,11 @@
 - how to know if mock request was sent? [\#186](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/186)
 
 ## [v2.5.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.1) (2016-05-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.5.0...v2.5.1)
 
 ## [v2.5.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.5.0) (2016-05-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.4.5...v2.5.0)
 
 **Merged pull requests:**
@@ -440,6 +501,7 @@
 - Added tests for Ember Data Model Fragment factory support in unit tests [\#188](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/188) ([patocallaghan](https://github.com/patocallaghan))
 
 ## [v2.4.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.4.5) (2016-04-21)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.4.4...v2.4.5)
 
 **Merged pull requests:**
@@ -451,6 +513,7 @@
 - Handle active model formatted request data properly [\#187](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/187) ([ccleung](https://github.com/ccleung))
 
 ## [v2.4.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.4.4) (2016-03-26)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.4.3...v2.4.4)
 
 **Closed issues:**
@@ -464,9 +527,11 @@
 - Fix compatibility with ember-data-model-fragments [\#184](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/184) ([whatthewhat](https://github.com/whatthewhat))
 
 ## [v2.4.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.4.3) (2016-03-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.4.2...v2.4.3)
 
 ## [v2.4.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.4.2) (2016-03-19)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.4.1...v2.4.2)
 
 **Closed issues:**
@@ -479,9 +544,11 @@
 - Update jquery-mockjax to 2.1.1 [\#181](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/181) ([YoranBrondsema](https://github.com/YoranBrondsema))
 
 ## [v2.4.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.4.1) (2016-03-09)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.4.0...v2.4.1)
 
 ## [v2.4.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.4.0) (2016-03-07)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.3.3...v2.4.0)
 
 **Closed issues:**
@@ -489,6 +556,7 @@
 - Cannot read property 'call' of undefined with empty factory... [\#178](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/178)
 
 ## [v2.3.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.3.3) (2016-03-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.3.2...v2.3.3)
 
 **Closed issues:**
@@ -499,6 +567,7 @@
 - Error when an App is teared down with App.destroy [\#104](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/104)
 
 ## [v2.3.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.3.2) (2016-03-03)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.3.1...v2.3.2)
 
 **Closed issues:**
@@ -506,6 +575,7 @@
 - makeList fails trying to read a number as a trait [\#177](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/177)
 
 ## [v2.3.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.3.1) (2016-03-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.3.0...v2.3.1)
 
 **Implemented enhancements:**
@@ -515,6 +585,7 @@
 - Mocks: andSucceed/andFail everywhere [\#157](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/157)
 
 ## [v2.3.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.3.0) (2016-03-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.2.0...v2.3.0)
 
 **Closed issues:**
@@ -523,12 +594,15 @@
 - How do I test `store.filter` [\#118](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/118)
 
 ## [v2.2.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.2.0) (2016-02-19)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.6...v2.2.0)
 
 ## [v2.1.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.6) (2016-02-14)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.5...v2.1.6)
 
 ## [v2.1.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.5) (2016-02-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.4...v2.1.5)
 
 **Closed issues:**
@@ -540,11 +614,12 @@
 - Return fixture relationship IDs if not an object \(fix \#166\) [\#167](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/167) ([mmelvin0](https://github.com/mmelvin0))
 
 ## [v2.1.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.4) (2016-01-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.3...v2.1.4)
 
 **Closed issues:**
 
-- Installing with Ember-CLI 2.2.0.beta.3 doesn't install bower dependencies  [\#170](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/170)
+- Installing with Ember-CLI 2.2.0.beta.3 doesn't install bower dependencies [\#170](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/170)
 - FactoryGuy.make\(\) doesn't handle ID relationships, Ember Data does [\#166](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/166)
 - Using handleQuery for the same endpoint with different query params [\#151](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/151)
 - Buggette with cheese - extractAttributes 0 should not be false [\#146](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/146)
@@ -557,6 +632,7 @@
 - Added video to your introduction [\#168](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/168) ([taras](https://github.com/taras))
 
 ## [v2.1.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.3) (2015-12-16)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.2...v2.1.3)
 
 **Closed issues:**
@@ -573,6 +649,7 @@
 - No more useJSONAPI [\#154](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/154) ([xcambar](https://github.com/xcambar))
 
 ## [v2.1.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.2) (2015-12-05)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.1...v2.1.2)
 
 **Closed issues:**
@@ -587,6 +664,7 @@
 - Fix jquery-mockjax bower package addition to Project [\#148](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/148) ([anilmaurya](https://github.com/anilmaurya))
 
 ## [v2.1.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.1) (2015-11-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.1.0...v2.1.1)
 
 **Closed issues:**
@@ -599,6 +677,7 @@
 - Attribute typing [\#145](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/145) ([wismer](https://github.com/wismer))
 
 ## [v2.1.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.1.0) (2015-10-06)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.0.3...v2.1.0)
 
 **Closed issues:**
@@ -611,6 +690,7 @@
 - payload of handleFind limited to record's typeKey [\#82](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/82)
 
 ## [v2.0.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.0.3) (2015-09-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.0.2...v2.0.3)
 
 **Closed issues:**
@@ -618,6 +698,7 @@
 - dependancy on jQuery^2.1 [\#130](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/130)
 
 ## [v2.0.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.0.2) (2015-09-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.0.1...v2.0.2)
 
 **Closed issues:**
@@ -632,6 +713,7 @@
 - update README for handleFindAll [\#129](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/129) ([eliotpiering](https://github.com/eliotpiering))
 
 ## [v2.0.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.0.1) (2015-09-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v2.0.0...v2.0.1)
 
 **Closed issues:**
@@ -639,12 +721,15 @@
 - jquery-mockjax is enabled in development as well as test environment [\#124](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/124)
 
 ## [v2.0.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v2.0.0) (2015-08-29)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.10...v2.0.0)
 
 ## [v1.13.10](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.10) (2015-08-28)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.9...v1.13.10)
 
 ## [v1.13.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.9) (2015-08-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.8...v1.13.9)
 
 **Implemented enhancements:**
@@ -661,21 +746,24 @@
 - Changed how to determine if mockjax should be loaded [\#125](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/125) ([begedin](https://github.com/begedin))
 
 ## [v1.13.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.8) (2015-08-21)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.7...v1.13.8)
 
 **Closed issues:**
 
 - Can the handler functions deal with non-rest adapters? [\#121](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/121)
-- Could not find module `active-model-adapter`  [\#120](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/120)
+- Could not find module `active-model-adapter` [\#120](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/120)
 
 **Merged pull requests:**
 
 - Allow usage of applications serializer to transform attributes [\#122](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/122) ([begedin](https://github.com/begedin))
 
 ## [v1.13.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.7) (2015-08-17)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.6...v1.13.7)
 
 ## [v1.13.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.6) (2015-08-11)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.5...v1.13.6)
 
 **Closed issues:**
@@ -688,9 +776,11 @@
 - Ember 2.0 fixes [\#119](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/119) ([mcm-ham](https://github.com/mcm-ham))
 
 ## [v1.13.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.5) (2015-08-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.4...v1.13.5)
 
 ## [v1.13.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.4) (2015-08-03)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.3...v1.13.4)
 
 **Closed issues:**
@@ -698,6 +788,7 @@
 - handleFindAll with no records [\#109](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/109)
 
 ## [v1.13.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.3) (2015-07-30)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.2...v1.13.3)
 
 **Closed issues:**
@@ -711,6 +802,7 @@
 - Work without prototype extensions [\#114](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/114) ([indirect](https://github.com/indirect))
 
 ## [v1.13.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.2) (2015-07-14)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.1...v1.13.2)
 
 **Closed issues:**
@@ -723,6 +815,7 @@
 - add note to avoid using ember-data-1.0.0-beta.19.2 [\#105](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/105) ([raycohen](https://github.com/raycohen))
 
 ## [v1.13.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.1) (2015-07-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.13.0...v1.13.1)
 
 **Implemented enhancements:**
@@ -735,9 +828,11 @@
 - Why reserved word 'default' as key [\#101](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/101)
 
 ## [v1.13.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.13.0) (2015-06-25)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.1.2...v1.13.0)
 
 ## [v1.1.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.1.2) (2015-06-25)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.1.1...v1.1.2)
 
 **Merged pull requests:**
@@ -746,11 +841,12 @@
 - handleCreate now respects user-set id in andReturn [\#98](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/98) ([slimeate](https://github.com/slimeate))
 
 ## [v1.1.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.1.1) (2015-06-17)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.1.0...v1.1.1)
 
 **Implemented enhancements:**
 
-- thinking about allowing factories to extend others  [\#93](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/93)
+- thinking about allowing factories to extend others [\#93](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/93)
 
 **Closed issues:**
 
@@ -758,9 +854,11 @@
 - Can't seem to use type as a property name [\#92](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/92)
 
 ## [v1.1.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.1.0) (2015-06-15)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.12...v1.1.0)
 
 ## [v1.0.12](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.12) (2015-06-11)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.11...v1.0.12)
 
 **Closed issues:**
@@ -768,6 +866,7 @@
 - Deprecation of `typeKey` in Ember Data [\#91](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/91)
 
 ## [v1.0.11](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.11) (2015-06-11)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.10...v1.0.11)
 
 **Closed issues:**
@@ -781,6 +880,7 @@
 - Mocking a failed reload typo fix [\#89](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/89) ([nummi](https://github.com/nummi))
 
 ## [v1.0.10](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.10) (2015-06-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.9...v1.0.10)
 
 **Closed issues:**
@@ -788,6 +888,7 @@
 - upgrade ember-cli to 0.2.5 [\#86](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/86)
 
 ## [v1.0.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.9) (2015-05-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.8...v1.0.9)
 
 **Closed issues:**
@@ -799,6 +900,7 @@
 - \[WIP\] Add andFail\(\) method to handleFind\(\) [\#85](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/85) ([alexanderjeurissen](https://github.com/alexanderjeurissen))
 
 ## [v1.0.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.8) (2015-05-08)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.7...v1.0.8)
 
 **Closed issues:**
@@ -811,6 +913,7 @@
 - ignore autogenerated .jscs files [\#83](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/83) ([GlennGeelen](https://github.com/GlennGeelen))
 
 ## [v1.0.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.7) (2015-05-05)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.6...v1.0.7)
 
 **Closed issues:**
@@ -818,6 +921,7 @@
 - Dealing with multiple-inverse associations [\#57](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/57)
 
 ## [v1.0.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.6) (2015-04-29)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.5...v1.0.6)
 
 **Merged pull requests:**
@@ -825,6 +929,7 @@
 - Get this add-on working when prototype extensions are disabled in Ember [\#78](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/78) ([chrisdpeters](https://github.com/chrisdpeters))
 
 ## [v1.0.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.5) (2015-04-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.4...v1.0.5)
 
 **Closed issues:**
@@ -836,6 +941,7 @@
 - Fixed typo in readme [\#77](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/77) ([kellyjensen](https://github.com/kellyjensen))
 
 ## [v1.0.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.4) (2015-04-20)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.3...v1.0.4)
 
 **Closed issues:**
@@ -847,24 +953,29 @@
 - resetModels when usingFixtureAdapter? [\#56](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/56)
 
 ## [v1.0.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.3) (2015-04-16)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.2...v1.0.3)
 
 **Implemented enhancements:**
 
 - blueprints for generating factories [\#70](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/70)
-- merge ember-cli-data-factory-guy into this project and make this  "addon" capable [\#69](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/69)
-- ES6 & Broccoli  [\#65](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/65)
+- merge ember-cli-data-factory-guy into this project and make this "addon" capable [\#69](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/69)
+- ES6 & Broccoli [\#65](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/65)
 
 ## [v1.0.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.2) (2015-04-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.13...v1.0.2)
 
 ## [v0.9.13](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.13) (2015-04-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v1.0.1...v0.9.13)
 
 ## [v1.0.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v1.0.1) (2015-04-07)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.12...v1.0.1)
 
 ## [v0.9.12](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.12) (2015-03-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.11...v0.9.12)
 
 **Closed issues:**
@@ -872,6 +983,7 @@
 - Manually set handleCreate response. [\#68](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/68)
 
 ## [v0.9.11](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.11) (2015-03-19)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.10...v0.9.11)
 
 **Closed issues:**
@@ -882,9 +994,10 @@
 
 **Merged pull requests:**
 
-- Use  typeKey for relationship instead of attribute name for build fixture relationship [\#66](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/66) ([cristinawithout](https://github.com/cristinawithout))
+- Use typeKey for relationship instead of attribute name for build fixture relationship [\#66](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/66) ([cristinawithout](https://github.com/cristinawithout))
 
 ## [v0.9.10](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.10) (2015-02-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.9...v0.9.10)
 
 **Closed issues:**
@@ -896,6 +1009,7 @@
 - \[WIP\] Handle update [\#63](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/63) ([pedrokiefer](https://github.com/pedrokiefer))
 
 ## [v0.9.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.9) (2015-02-18)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.8...v0.9.9)
 
 **Closed issues:**
@@ -903,9 +1017,11 @@
 - Release incorporating `var` fix? [\#61](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/61)
 
 ## [v0.9.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.8) (2015-02-03)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.7...v0.9.8)
 
 ## [v0.9.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.7) (2015-01-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.6...v0.9.7)
 
 **Merged pull requests:**
@@ -914,6 +1030,7 @@
 - Allows custom mapping of objects. [\#55](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/55) ([pedrokiefer](https://github.com/pedrokiefer))
 
 ## [v0.9.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.6) (2015-01-19)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.5...v0.9.6)
 
 **Closed issues:**
@@ -921,6 +1038,7 @@
 - Match only set attributes [\#53](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/53)
 
 ## [v0.9.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.5) (2015-01-17)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.4...v0.9.5)
 
 **Closed issues:**
@@ -933,6 +1051,7 @@
 - Add missing property for hasMany example [\#52](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/52) ([mattmcginnis](https://github.com/mattmcginnis))
 
 ## [v0.9.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.4) (2015-01-14)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.3...v0.9.4)
 
 **Merged pull requests:**
@@ -941,6 +1060,7 @@
 - Updating docs for DS.FixtureAdapter [\#49](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/49) ([ksykulev](https://github.com/ksykulev))
 
 ## [v0.9.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.3) (2015-01-11)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.2...v0.9.3)
 
 **Closed issues:**
@@ -953,9 +1073,11 @@
 - handleFindQuery json payload must be an array [\#45](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/45) ([ksykulev](https://github.com/ksykulev))
 
 ## [v0.9.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.2) (2014-12-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.1...v0.9.2)
 
 ## [v0.9.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.1) (2014-12-16)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.9.0...v0.9.1)
 
 **Closed issues:**
@@ -963,6 +1085,7 @@
 - support for custom data types [\#44](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/44)
 
 ## [v0.9.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.9.0) (2014-12-15)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.7...v0.9.0)
 
 **Closed issues:**
@@ -974,9 +1097,11 @@
 - Add {includeId: true} to toJSON\(\) examples [\#43](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/43) ([mattmcginnis](https://github.com/mattmcginnis))
 
 ## [v0.8.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.7) (2014-12-10)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.6...v0.8.7)
 
 ## [v0.8.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.6) (2014-12-10)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.5...v0.8.6)
 
 **Merged pull requests:**
@@ -985,12 +1110,13 @@
 - Cleaning up pushFixture. [\#41](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/41) ([ksykulev](https://github.com/ksykulev))
 
 ## [v0.8.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.5) (2014-12-06)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.4...v0.8.5)
 
 **Closed issues:**
 
 - Improvement: expecting specific parameters [\#36](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/36)
-- HandleUpdate builds the wrong url  [\#29](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/29)
+- HandleUpdate builds the wrong url [\#29](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/29)
 - AMD/Require and use strict [\#21](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/21)
 
 **Merged pull requests:**
@@ -999,6 +1125,7 @@
 - Changing modelName to type [\#39](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/39) ([ksykulev](https://github.com/ksykulev))
 
 ## [v0.8.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.4) (2014-12-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.3...v0.8.4)
 
 **Merged pull requests:**
@@ -1006,9 +1133,11 @@
 - Complete AMD module extraction \(tested with ember-cli\) [\#38](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/38) ([indirect](https://github.com/indirect))
 
 ## [v0.8.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.3) (2014-11-27)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.2...v0.8.3)
 
 ## [v0.8.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.2) (2014-11-27)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.1...v0.8.2)
 
 **Closed issues:**
@@ -1016,9 +1145,11 @@
 - Improvement: Ember cli support [\#37](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/37)
 
 ## [v0.8.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.1) (2014-11-18)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.8.0...v0.8.1)
 
 ## [v0.8.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.8.0) (2014-11-14)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.9...v0.8.0)
 
 **Merged pull requests:**
@@ -1026,6 +1157,7 @@
 - Convert the Bower dist file into a CommonJS and AMD compatible module [\#35](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/35) ([indirect](https://github.com/indirect))
 
 ## [v0.7.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.9) (2014-11-13)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.8...v0.7.9)
 
 **Closed issues:**
@@ -1037,6 +1169,7 @@
 - Make jshint happy [\#34](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/34) ([indirect](https://github.com/indirect))
 
 ## [v0.7.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.8) (2014-11-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.7...v0.7.8)
 
 **Closed issues:**
@@ -1044,6 +1177,7 @@
 - Does not use model-specific adapters for buildURL [\#31](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/31)
 
 ## [v0.7.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.7) (2014-11-09)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.6...v0.7.7)
 
 **Closed issues:**
@@ -1056,16 +1190,19 @@
 - Get the adapter for the model type if exists [\#32](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/32) ([cristinawithout](https://github.com/cristinawithout))
 
 ## [v0.7.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.6) (2014-11-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.5...v0.7.6)
 
 **Merged pull requests:**
 
-- adds $.mockjax.clear\(\) to the mixin's teardown method. [\#30](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/30) ([yratanov](https://github.com/yratanov))
+- adds \$.mockjax.clear\(\) to the mixin's teardown method. [\#30](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/30) ([yratanov](https://github.com/yratanov))
 
 ## [v0.7.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.5) (2014-10-31)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.4...v0.7.5)
 
 ## [v0.7.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.4) (2014-10-31)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.3...v0.7.4)
 
 **Closed issues:**
@@ -1073,6 +1210,7 @@
 - "typeKey of undefined" \#3 [\#26](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/26)
 
 ## [v0.7.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.3) (2014-10-27)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.2...v0.7.3)
 
 **Closed issues:**
@@ -1081,21 +1219,27 @@
 - Cannot read property 'typeKey' of undefined [\#24](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/24)
 
 ## [v0.7.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.2) (2014-10-17)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.1.1...v0.7.2)
 
 ## [v0.7.1.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.1.1) (2014-10-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.1...v0.7.1.1)
 
 ## [v0.7.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.1) (2014-10-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.7.0...v0.7.1)
 
 ## [v0.7.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.7.0) (2014-09-15)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.6.4...v0.7.0)
 
 ## [v0.6.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.6.4) (2014-09-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.6.3...v0.6.4)
 
 ## [v0.6.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.6.3) (2014-09-10)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.6.2...v0.6.3)
 
 **Closed issues:**
@@ -1104,6 +1248,7 @@
 - Create blueprint factory file, when create model in ember-cli. [\#17](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/17)
 
 ## [v0.6.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.6.2) (2014-09-04)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.6.1...v0.6.2)
 
 **Closed issues:**
@@ -1117,9 +1262,11 @@
 - Fix FixtureAdapter resolve of hasMany relationship on save [\#22](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/22) ([KnownSubset](https://github.com/KnownSubset))
 
 ## [v0.6.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.6.1) (2014-08-21)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.6.0...v0.6.1)
 
 ## [v0.6.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.6.0) (2014-08-19)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.5.3...v0.6.0)
 
 **Closed issues:**
@@ -1128,6 +1275,7 @@
 - Use with Ember CLI [\#10](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/10)
 
 ## [v0.5.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.5.3) (2014-08-19)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.5.2...v0.5.3)
 
 **Closed issues:**
@@ -1136,9 +1284,11 @@
 - hasMany associations [\#14](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/14)
 
 ## [v0.5.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.5.2) (2014-08-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.5.1...v0.5.2)
 
 ## [v0.5.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.5.1) (2014-08-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.5.0...v0.5.1)
 
 **Merged pull requests:**
@@ -1146,9 +1296,11 @@
 - Fixed createRecord for one-to-none associations [\#13](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/13) ([KnownSubset](https://github.com/KnownSubset))
 
 ## [v0.5.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.5.0) (2014-08-01)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.4.2...v0.5.0)
 
 ## [v0.4.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.4.2) (2014-07-16)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.4.1...v0.4.2)
 
 **Merged pull requests:**
@@ -1156,12 +1308,15 @@
 - Added support for async relationships [\#9](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/9) ([KnownSubset](https://github.com/KnownSubset))
 
 ## [v0.4.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.4.1) (2014-07-11)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.10...v0.4.1)
 
 ## [v0.3.10](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.10) (2014-06-12)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.9...v0.3.10)
 
 ## [v0.3.9](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.9) (2014-06-05)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.8...v0.3.9)
 
 **Closed issues:**
@@ -1169,30 +1324,39 @@
 - Syntax to define sequences [\#7](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/7)
 
 ## [v0.3.8](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.8) (2014-06-03)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.7...v0.3.8)
 
 ## [v0.3.7](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.7) (2014-06-02)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.6...v0.3.7)
 
 ## [v0.3.6](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.6) (2014-05-30)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.5...v0.3.6)
 
 ## [v0.3.5](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.5) (2014-05-29)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.4...v0.3.5)
 
 ## [v0.3.4](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.4) (2014-05-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.3...v0.3.4)
 
 ## [v0.3.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.3) (2014-05-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.2...v0.3.3)
 
 ## [v0.3.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.2) (2014-05-24)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.1...v0.3.2)
 
 ## [v0.3.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.1) (2014-05-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.3.0...v0.3.1)
 
 ## [v0.3.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.3.0) (2014-05-23)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.2.1...v0.3.0)
 
 **Merged pull requests:**
@@ -1200,12 +1364,15 @@
 - Fix some typos in the docs. [\#4](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/4) ([cibernox](https://github.com/cibernox))
 
 ## [v0.2.1](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.2.1) (2014-05-10)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.2.0...v0.2.1)
 
 ## [v0.2.0](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.2.0) (2014-05-08)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.1.3...v0.2.0)
 
 ## [v0.1.3](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.1.3) (2014-05-06)
+
 [Full Changelog](https://github.com/adopted-ember-addons/ember-data-factory-guy/compare/v0.1.2...v0.1.3)
 
 **Closed issues:**
@@ -1214,10 +1381,9 @@
 - Sequences [\#2](https://github.com/adopted-ember-addons/ember-data-factory-guy/issues/2)
 
 ## [v0.1.2](https://github.com/adopted-ember-addons/ember-data-factory-guy/tree/v0.1.2) (2014-05-06)
+
 **Merged pull requests:**
 
 - fix for check property [\#1](https://github.com/adopted-ember-addons/ember-data-factory-guy/pull/1) ([OpakAlex](https://github.com/OpakAlex))
 
-
-
-\* *This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)*
+\* _This Change Log was automatically generated by [github_changelog_generator](https://github.com/skywinder/Github-Changelog-Generator)_
