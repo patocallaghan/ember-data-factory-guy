@@ -1,9 +1,12 @@
 ---
 language: node_js
+node_js:
+  # we recommend testing addons with the same minimum supported node version as Ember CLI
+  # so that your addon works for all apps
+  - "8"
+
 sudo: false
 dist: trusty
-node_js:
-  - "8"
 
 addons:
   chrome: stable
@@ -11,23 +14,27 @@ addons:
 cache:
   yarn: true
 
-env:
-  - EMBER_TRY_SCENARIO=ember-ember-data-2.11
-  - EMBER_TRY_SCENARIO=default
-  - EMBER_TRY_SCENARIO=ember-ember-data-beta
-
 matrix:
   fast_finish: true
   allow_failures:
-    - env: EMBER_TRY_SCENARIO=ember-ember-data-2.11
-    - env: EMBER_TRY_SCENARIO=ember-ember-data-beta
+    - env: EMBER_TRY_SCENARIO=ember-canary
 
-before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
+  include:
+    # runs linting and tests with current locked deps
 
-install:
-  - yarn install
+    - stage: "Tests"
+      name: "Tests"
+      script:
+        - npm run lint:hbs
+        - npm run lint:js
+        - npm test
 
-script:
-  - ember test
+    # we recommend new addons test the current and previous LTS
+    # as well as latest stable release (bonus points to beta/canary)
+    - stage: "Additional Tests"
+      env: EMBER_TRY_SCENARIO=ember-lts-3.4
+    - env: EMBER_TRY_SCENARIO=ember-lts-3.8
+    - env: EMBER_TRY_SCENARIO=ember-release
+    - env: EMBER_TRY_SCENARIO=ember-beta
+    - env: EMBER_TRY_SCENARIO=ember-canary
+    - env: EMBER_TRY_SCENARIO=ember-default-with-jquery

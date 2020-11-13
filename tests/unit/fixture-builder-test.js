@@ -38,7 +38,7 @@ module('FixtureBuilderFactory', function(hooks) {
 
     for (let test of tests) {
       let [serializerType, expectedFixtureBuilder] = test;
-      serializer = serializerType && (new serializerType);
+      serializer = serializerType && serializerType.create();
       let fixtureBuilder = factory.fixtureBuilder(modelName);
       assert.ok(fixtureBuilder instanceof expectedFixtureBuilder, `${serializerType} returns ${expectedFixtureBuilder.name}`);
     }
