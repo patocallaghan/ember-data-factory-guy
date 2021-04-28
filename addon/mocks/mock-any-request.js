@@ -6,6 +6,7 @@ import {
   paramsFromRequestBody,
   toParams,
 } from '../utils/helper-functions';
+import FactoryGuy from '../factory-guy';
 
 export default class MockAnyRequest extends MockRequest {
   constructor({ type = 'GET', url, responseText, status = 200 }) {
@@ -39,11 +40,55 @@ export default class MockAnyRequest extends MockRequest {
 
   paramsMatch(request) {
     if (!isEmptyObject(this.someQueryParams)) {
-      return this._tryMatchParams(request, this.someQueryParams, isPartOf);
+      let isMatch = this._tryMatchParams(
+        request,
+        this.someQueryParams,
+        isPartOf
+      );
+      if (FactoryGuy.logLevel > 0) {
+        const name = this.constructor.name.replace('Request', ''),
+          type = this.getType(),
+          status = `[${this.status}]`,
+          url = this.getUrl();
+        console.log(
+          `[factory-guy] someQueryParams match? ${isMatch}`,
+          name,
+          type,
+          status,
+          url,
+          'request params',
+          toParams(request.queryParams),
+          'handler params',
+          toParams(this.queryParams)
+        );
+      }
+      return isMatch;
     }
 
     if (!isEmptyObject(this.queryParams)) {
-      return this._tryMatchParams(request, this.queryParams, isEquivalent);
+      let isMatch = this._tryMatchParams(
+        request,
+        this.queryParams,
+        isEquivalent
+      );
+      if (FactoryGuy.logLevel > 0) {
+        const name = this.constructor.name.replace('Request', ''),
+          type = this.getType(),
+          status = `[${this.status}]`,
+          url = this.getUrl();
+        console.log(
+          `[factory-guy] queryParams match? ${isMatch}`,
+          name,
+          type,
+          status,
+          url,
+          'request params',
+          toParams(request.queryParams),
+          'handler params',
+          toParams(this.queryParams)
+        );
+      }
+      return isMatch;
     }
 
     return true;

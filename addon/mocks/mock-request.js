@@ -157,7 +157,9 @@ export default class {
           type,
           status,
           url,
+          'request params',
           toParams(request.queryParams),
+          'handler params',
           toParams(this.someQueryParams)
         );
       }
@@ -179,7 +181,9 @@ export default class {
           type,
           status,
           url,
+          'request params',
           toParams(request.queryParams),
+          'handler params',
           toParams(this.queryParams)
         );
       }
