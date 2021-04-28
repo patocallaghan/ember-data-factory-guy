@@ -78,15 +78,16 @@ export default class MockAnyRequest extends MockRequest {
         status = `[${this.status}]`,
         url = this.getUrl();
       console.log(
-        `[factory-guy] ${matchType} match? ${isMatch}`,
+        `[factory-guy]`,
         name,
         type,
         status,
         url,
-        'request params',
-        toParams(request.queryParams),
-        'handler params',
-        toParams(this.queryParams)
+        `[${matchType} match? ${isMatch}]`,
+        'request params ->',
+        toParams(requestParams),
+        'handler params ->',
+        toParams(handlerParams)
       );
     }
     return isMatch;
