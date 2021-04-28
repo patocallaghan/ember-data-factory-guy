@@ -142,52 +142,16 @@ export default class {
 
   paramsMatch(request) {
     if (!isEmptyObject(this.someQueryParams)) {
-      let isMatch = isPartOf(
+      return isPartOf(
         toParams(request.queryParams),
         toParams(this.someQueryParams)
       );
-      if (FactoryGuy.logLevel > 0) {
-        const name = this.constructor.name.replace('Request', ''),
-          type = this.getType(),
-          status = `[${this.status}]`,
-          url = this.getUrl();
-        console.log(
-          `[factory-guy] someQueryParams match? ${isMatch}`,
-          name,
-          type,
-          status,
-          url,
-          'request params',
-          toParams(request.queryParams),
-          'handler params',
-          toParams(this.someQueryParams)
-        );
-      }
-      return isMatch;
     }
     if (!isEmptyObject(this.queryParams)) {
-      let isMatch = isEquivalent(
+      return isEquivalent(
         toParams(request.queryParams),
         toParams(this.queryParams)
       );
-      if (FactoryGuy.logLevel > 0) {
-        const name = this.constructor.name.replace('Request', ''),
-          type = this.getType(),
-          status = `[${this.status}]`,
-          url = this.getUrl();
-        console.log(
-          `[factory-guy] queryParams match? ${isMatch}`,
-          name,
-          type,
-          status,
-          url,
-          'request params',
-          toParams(request.queryParams),
-          'handler params',
-          toParams(this.queryParams)
-        );
-      }
-      return isMatch;
     }
     return true;
   }

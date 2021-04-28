@@ -40,66 +40,55 @@ export default class MockAnyRequest extends MockRequest {
 
   paramsMatch(request) {
     if (!isEmptyObject(this.someQueryParams)) {
-      let isMatch = this._tryMatchParams(
+      return this._tryMatchParams(
         request,
         this.someQueryParams,
-        isPartOf
+        isPartOf,
+        'withSomeParams'
       );
-      if (FactoryGuy.logLevel > 0) {
-        const name = this.constructor.name.replace('Request', ''),
-          type = this.getType(),
-          status = `[${this.status}]`,
-          url = this.getUrl();
-        console.log(
-          `[factory-guy] someQueryParams match? ${isMatch}`,
-          name,
-          type,
-          status,
-          url,
-          'request params',
-          toParams(request.queryParams),
-          'handler params',
-          toParams(this.queryParams)
-        );
-      }
-      return isMatch;
     }
 
     if (!isEmptyObject(this.queryParams)) {
-      let isMatch = this._tryMatchParams(
+      return this._tryMatchParams(
         request,
         this.queryParams,
-        isEquivalent
+        isEquivalent,
+        'withParams'
       );
-      if (FactoryGuy.logLevel > 0) {
-        const name = this.constructor.name.replace('Request', ''),
-          type = this.getType(),
-          status = `[${this.status}]`,
-          url = this.getUrl();
-        console.log(
-          `[factory-guy] queryParams match? ${isMatch}`,
-          name,
-          type,
-          status,
-          url,
-          'request params',
-          toParams(request.queryParams),
-          'handler params',
-          toParams(this.queryParams)
-        );
-      }
-      return isMatch;
     }
 
     return true;
   }
 
-  _tryMatchParams(request, handlerParams, comparisonFunction) {
+  _tryMatchParams(request, handlerParams, comparisonFunction, matchType) {
     let requestParams = request.queryParams;
 
     if (/POST|PUT|PATCH/.test(this.type)) {
       requestParams = paramsFromRequestBody(request.requestBody);
     }
-    return comparisonFunction(toParams(requestParams), toParams(handlerParams));
+
+    let isMatch = comparisonFunction(
+      toParams(requestParams),
+      toParams(handlerParams)
+    );
+
+    if (FactoryGuy.logLevel > 0) {
+      const name = this.constructor.name.replace('Request', ''),
+        type = this.getType(),
+        status = `[${this.status}]`,
+        url = this.getUrl();
+      console.log(
+        `[factory-guy] ${matchType} match? ${isMatch}`,
+        name,
+        type,
+        status,
+        url,
+        'request params',
+        toParams(request.queryParams),
+        'handler params',
+        toParams(this.queryParams)
+      );
+    }
+    return isMatch;
   }
 }
