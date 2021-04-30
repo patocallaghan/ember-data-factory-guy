@@ -126,6 +126,17 @@ module('MockAny', function (hooks) {
     assert.deepEqual(json, whatsUpDoc, 'returns next json that is set');
   });
 
+  test('returns in DELETE with falsey values', async function (assert) {
+    const method = 'DELETE',
+      url = '/api/get-stuff',
+      whatsUp = '';
+
+    let theMock = mock({ url, type: method }).returns(whatsUp);
+
+    let json = await fetchJSON({ url, method });
+    assert.deepEqual(json, whatsUp, 'returns emptys string that is set');
+  });
+
   test('GET with url params', async function (assert) {
     const method = 'GET',
       url = '/api/get-stuff',
