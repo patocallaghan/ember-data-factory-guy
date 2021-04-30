@@ -129,12 +129,20 @@ module('MockAny', function (hooks) {
   test('returns in DELETE with falsey values', async function (assert) {
     const method = 'DELETE',
       url = '/api/get-stuff',
-      whatsUp = '';
+      emptyString = '',
+      nullValue = null;
 
-    let theMock = mock({ url, type: method }).returns(whatsUp);
+    let theMock = mock({ url, type: method }).returns(emptyString);
+    let response = await fetchJSON({ url, method });
+    assert.deepEqual(
+      response,
+      emptyString,
+      'returns emptys string that is set'
+    );
 
-    let json = await fetchJSON({ url, method });
-    assert.deepEqual(json, whatsUp, 'returns emptys string that is set');
+    theMock.returns(nullValue);
+    response = await fetchJSON({ url, method });
+    assert.deepEqual(response, nullValue, 'returns emptys string that is set');
   });
 
   test('GET with url params', async function (assert) {
